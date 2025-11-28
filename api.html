@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS link -->
+    <!--<link rel="stylesheet" href="./api.css">-->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- Font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+
+    <!-- Google fonts link -->
+   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">-->
+
+
+
+    <title>Weather App</title>
+    
+</head>
+
+<body>
+
+    <!--<div class="main-container">
+        <div class="custom-select">
+            <input type="text " class="inputcountry" placeholder="Enter country">-->
+            <!--<input type="text " class="inputstates" placeholder="Enter States">-->
+            <!--<select onchange="print_state('state',this.selectedIndex);" id="country" name ="country"></select>
+            <select name ="state" id ="state" class="inputstates"></select>
+            <select class="country" class="select-items" onchange="loadStates()">
+                <option selected><b>Select Country</b></option>
+            </select>
+            </select>
+            <select class="state" onchange="loadCities()">
+                <option selected><b>Select State</b></option>
+            </select>
+            <select class="city">
+                <option value=""><b>Select a City</b></option>
+            </select>
+            <button class="button"><i class="fas fa-search"></i></button>
+        </div>-->
+    <div class="container">   
+        <div class="dropdown-container  ">
+            <!--<input type="text " class="inputcountry" placeholder="Enter country">-->
+            <!--<input type="text " class="inputstates" placeholder="Enter States">-->
+            <!--<select onchange="print_state('state',this.selectedIndex);" id="country" name ="country"></select>
+            <select name ="state" id ="state" class="inputstates"></select>-->
+            <select class="country" class="select-items" onchange="loadStates()">
+                <option selected><b>Select Country</b></option>
+            </select>
+            <select class="state" onchange="loadCities()">
+                <option selected><b>Select State</b></option>
+            </select>
+            <select class="city">
+                <option value=""><b>Select a City</b></option>
+            </select>
+            <button class="button"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="weather-container">
+        <div class="weather-card">
+            <h2 class="weather-title">Weather Update</h2>
+            <div class="weather-content">
+                <div class="temp">
+                    <p class="temp">temp°C</p>
+                </div>
+                <div class="condition">
+                    <img class="weather-icon" src="" alt="loading..">
+                    <p class="desc">---</p> 
+                </div>
+                <div class="location">
+                    <p class="c" id="timezone">timezone</p>
+                </div>
+            </div>
+            <div class="time-box">
+                <p class="d" id="date">date</p>
+                <p class="t" id="time">time</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to Javascript -->
+    <script src="api.js"></script>
+    <!--<script src="csc.js"></script> -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+</body>
+
+</html>
